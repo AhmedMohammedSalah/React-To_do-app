@@ -9,7 +9,7 @@ const Todo = ({todo,toggleTodo,deleteTodo ,editTodo,mode}) => {
 
             </div>
             <div className='todos-todo_text'>{todo.title}</div>
-            {mode!='edit'&&(
+            {mode!=='edit'&&(
             <div className='todos-todo_cta'>
                 <div className='todos-todo_cta-edit' onClick={()=>editTodo(todo)}>
                     <FeatherIcon icon="edit" size="20"/>
