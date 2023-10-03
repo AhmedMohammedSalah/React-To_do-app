@@ -14,7 +14,7 @@ const TodoList = ({setNumOfItems}) => {
   const toggleTodo=(id)=>{
     setTodos(data=>{ 
       const newData=data.map((td)=>{
-        if (td.id===id) {
+        if (td.id==id) {
           return {...td,done:!td.done};
         }
         return td;
@@ -32,7 +32,7 @@ const TodoList = ({setNumOfItems}) => {
 
   };
   const addNewTodo=(title)=>{
-    if (mode==='edit') {
+    if (mode=='edit') {
       const newtodos=todos.map(td=> {
         if (td.id==activeTodo.id) {
           td.title=title;
@@ -53,7 +53,7 @@ const TodoList = ({setNumOfItems}) => {
   if (mode=="filter"){
     currentTodos=todos.filter(t=> !t.done)
   }
-  if (mode==='edit') {
+  if (mode=='edit') {
     currentTodos=[activeTodo];
   }
   const changeMode=()=>{
