@@ -1,7 +1,7 @@
 import React from 'react'
 import FeatherIcon from "feather-icons-react"
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteTodo, editTodo, handleDone,setActiveTodo } from '../../store/todos/todosActions'
+import { deleteTodo, handleDone,setActiveTodo } from '../../store/todos/todosActions'
 import { changeModes } from '../../store/modes/modesActions';
 import { modesTypes } from '../../store/types';
 

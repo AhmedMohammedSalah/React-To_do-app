@@ -17,6 +17,7 @@ const Todos = ( props ) => {
         } else {
             setTodos( allTodos );
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [mode, currentTodo, allTodos] );
     useEffect( () => {
         localStorage.setItem( 'todos', JSON.stringify( allTodos ) )
